@@ -4,12 +4,17 @@
     alert('aaa')
   </script>
   {% include head.html %}
+     ---
+    layout: head
+    ---
 
  <!--  <body data-spy="scroll" data-target="#myAffix"> -->
   <body>
 
     {% include header.html %}
-
+    ---
+    layout: header
+    ---
 
     <div id="main" class="container main">
       {{ content }}
