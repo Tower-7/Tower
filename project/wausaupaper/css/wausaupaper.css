@@ -1,0 +1,325 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.header {
+	position: relative;
+	width: 100%;
+	height: 150px;
+}
+.header>div {
+	height: 100%;
+	margin: 0 auto;
+}
+.header .header_logo {
+	position: absolute;
+	top: 40px;
+	left: 200px;
+}
+.header .menu-item {
+	float: left;
+	width: 105px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	color: #555;
+	background-color: #fff;
+	border-right: 1px solid #ccc;
+}
+.header .menu-item:nth-child(1) {
+	border-bottom-left-radius: 20px;
+}
+.header .header_secondary_nav {
+	position: absolute;
+	top: 70px;
+	right: 100px;
+	width: 900px;
+	height: 40px;
+}
+.header .secondary-item {
+	float: right;
+	width: 100px;
+	font-size: 14px;
+	color: #555;
+	line-height: 40px;
+	text-align: center;
+}
+.banner {
+	position: relative;
+	top: -150px;
+	left: 0;
+	width: 100%;
+	height: 752px;
+}
+.banner .banner-item {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 752px;
+	background: url(../img/AllianceCarousel1.jpg);
+	background-size: cover;
+	background-position: top center;
+	z-index: -1;
+}
+.banner .banner-item>div{
+	position: absolute;
+	top: 200px;
+	left: 150px;
+	width: 500px;
+}
+.banner .banner-item>div h1 {
+	color: #333;
+	margin-bottom: 20px;
+	line-height: 50px;
+	font-family: "Proxima N W15 Thin Reg",Arial,sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+}
+.banner .banner-item>div p {
+	color: #555;
+	line-height: 25px;
+}
+.banner .banner-item>div a {
+	display: inline-block;
+	margin-top: 50px;
+	padding: 10px 20px;
+	background-color: #00853e;
+	border-radius: 5px;
+	color: #fff;
+}
+.banner .controller {
+	position: absolute;
+	top: 200px;
+	right: 50px;
+	padding: 5px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+.banner .controller li {
+	float: right;
+	width: 15px;
+	height: 15px;
+	margin: 0 3px;
+	background-color: #ccc;
+	border-radius: 50%;
+}
+.active {
+	background-color: #00853e;
+}
+.banner-bar {
+	width: 100%;
+	height: 50px;
+	margin-top: -150px;
+	background-color: #00853e;
+}
+.home-brands {
+	width: 936px;
+	height: 458px;
+	margin: 0 auto;
+	padding: 64px 24px 96px 24px;
+
+}
+.home-brands .prose {
+	width: 100%;
+	height: 63px;
+	padding-bottom: 64px;
+	background: url(../img/brands-header-line_straight-4.png) no-repeat;	
+	background-position: bottom center;
+}
+.home-brands h3 {
+	padding-bottom: 10px;
+	font-size: 25px;
+	text-align: center;
+	font-weight: normal;
+}
+.home-brands p {
+	text-align: center;
+	color: #555;
+}
+.home-brands .layout-4-columns {
+	width: 100%;
+	margin-top: 50px;
+}
+.home-brands .layout-4-columns li {
+	float: left;
+	width: 23%;
+	padding-left: 2%;
+}
+.home-brands .layout-4-columns li img {
+	width: 100%;
+}
+.home-brands .layout-4-columns p {
+	text-align: left;
+	font-size: 14px;
+}
+.home-brands .layout-4-columns .btn {
+	display: inline-block;
+	padding: 5px 15px;
+	margin-top: 10px;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #bfcf9a;
+}
+.home-product_groups {
+	width: 100%;
+	height: 312px;
+	background: url(../img/product_groups-hero.jpg);
+	background-position: top center;
+}
+.home-product_groups .layout-split {
+	width: 936px;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../img/vertical-separator-curved_top.png)top center no-repeat, url(../img/vertical-separator-curved_bottom.png)bottom center no-repeat;
+}
+.home-product_groups .layout-split .towel {
+	float: left;
+	width: 300px;
+	padding-top: 50px;
+	padding-left: 50px;
+	text-align: center;
+}
+.home-product_groups .layout-split .dispenser {
+	float: right;
+	width: 300px;
+	padding-top: 50px;
+	padding-left: 50px;
+	text-align: center;
+}
+.home-product_groups .layout-split h3 {
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.home-product_groups .layout-split p {
+	color: #ccc;
+}
+.home-widgets {
+	width: 936px;
+	height: 355px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.home-widgets .widget {
+	float: left;
+	width: 30%;
+	padding-left: 3%;
+}
+.home-widgets .widget h3 {
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	color: #555;
+	font-weight: normal;
+}
+.home-widgets .widget_ultimate_posts li {
+	float: left;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.home-widgets .widget_ultimate_posts li div:nth-child(1) {
+	float: left;
+	width: 18%;
+	color: #555;
+}
+.home-widgets .widget_ultimate_posts li div:nth-child(2) {
+	float: left;
+	width: 82%;
+}
+.home-widgets .widget_ultimate_posts li a {
+	color: #00853e;
+}
+.home-widgets .widget_text p:nth-child(3){
+	margin-top: 10px;
+	color: #555;
+	font-size: 14px;
+}
+.home-widgets .widget_text a,.widget_sp_image a {
+	display: inline-block;
+	padding: 5px 10px;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 3px;
+	background-color: #00853e;
+}
+.home-widgets .widget_sp_image p {
+	margin-top: 10px;
+	color: #555;
+	font-size: 14px;
+}
+.footer {
+	width: 100%;
+	margin-top: 50px;
+	background-color: #252525;
+}
+.footer .content {
+	width: 936px;
+	height: 312px;
+	padding: 64px 24px;
+	margin: 0 auto;
+}
+.footer .content .footer-top {
+	width: 100%;
+	height: 300px;
+}
+.footer .content .footer-top_content {
+	margin-right: 50px;
+}
+.footer .content .footer-top_content p{
+	width: 260px;
+	margin-top: 15px;
+	font-size: 16px;
+	color: #eee;
+}
+.footer .content .footer-top_nav .footer__nav__column {
+	float: left;
+	width: 150px;
+}
+.footer .footer__nav__column h3{
+	margin-bottom: 30px;
+	color: #555;
+	font-weight: normal;
+}
+.footer .footer__nav__column a {
+	color: #eee;
+	font-size: 14px;
+}
+.footer .footer-bottom {
+	width: 100%;
+}
+.footer .footer-bottom div:nth-child(1) {
+	width: 800px;
+	height: 40px;
+	margin: 0 auto;
+	border-top: 1px solid #888;
+	color: #888;
+	line-height: 80px;
+	text-align: center;
+
+}
+.footer .footer-bottom .to-TOP {
+	position: relative;
+	top: -20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: #555;
+	font-size: 14px;
+	background-color: #888;
+	text-align: center;
+	line-height: 40px;
+}

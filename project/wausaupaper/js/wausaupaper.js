@@ -1,0 +1,4 @@
+$(document).ready(function(){
+	var header = '<header class="header"><div><div class="header_logo left"><img src="project/wausaupaper/img/logo-color.svg"></div><div class="header_nav right"><ul><li class="menu-item">BRAND</li><li class="menu-item">BRAND</li><li class="menu-item">BRAND</li><li class="menu-item">BRAND</li><li class="menu-item">BRAND</li><li class="menu-item">BRAND</li></ul></div><div class="header_secondary_nav"><ul><li class="secondary-item">Products</li><li class="secondary-item">Products</li><li class="secondary-item">Products</li><li class="secondary-item">Products</li></ul></div></div></header>'
+	$('.header').html(header)
+})
