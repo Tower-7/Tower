@@ -1,6 +1,6 @@
 @charset "utf-8";
 .logo {
-	width: 80%;
+	width: 1100px;
 	height: 200px;
 	margin: 0 auto;
 }
@@ -43,7 +43,7 @@
 	height: 50px;
 }
 .nav .wrap {
-	width: 900px;
+	width: 1100px;
 	height: 40px;
 	margin: 0 auto;
 	line-height: 40px;
