@@ -12,3 +12,40 @@
 .header a {color: #ccc;} .header a:hover {color: #fff;} 
 .header .symbol {position: absolute;display: none;top:26px;border-left:10px solid #333;border-right: 10px solid #333;border-bottom: 10px solid #fff; background-color: #fff;z-index: 1;} 
 .header .dd{position: absolute;display: none; top: 35px;right: 0; padding: 5px; background-color: #fff;border: 1px solid #ccc; border-radius: 1px; font-size: 12px;color: #69B0AC;line-height: 20px;z-index: 1;}
+
+.footerbox {
+	width: 1100px;
+	margin: 0 auto;
+}
+.footerbox .top {
+	height: 160px;
+	border-bottom: 1px solid #eee;
+}
+.footerbox .top .service ul {
+	margin-top: 30px;
+}
+.footerbox .top .item {
+	height: 30px;
+	line-height: 25px;
+}
+.footerbox .top div {
+	width: 50%;
+	text-align: center;
+}
+.footerbox ul {
+	color: #fff;
+}
+.footerbox .bottom {
+	margin-top: 20px;
+	text-align: center;
+} 
+.footerbox .bottom .item {
+	display: inline-block;
+	width: 80px;
+}
+.footerbox .bottom .line {
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	background-color: #fff;
+}

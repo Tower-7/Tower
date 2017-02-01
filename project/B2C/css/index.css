@@ -117,6 +117,7 @@
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
+.active {z-index: 1;}
 .banner .btn {
 	display: none;
 	position: absolute;
@@ -131,6 +132,7 @@
 	font-family: SimSun;
 	cursor: pointer;
 	opacity: 0.5;
+	z-index: 10;
 }
 .banner .pre {
 	left: 50px;
@@ -145,6 +147,7 @@
 	transform: translateX(-50%);
 	width: 200px;
 	height: 30px;
+	z-index: 10;
 }
 .banner .dots .dots_item {
 	float: left;
@@ -390,39 +393,3 @@
 	background-color: #333;
 }
 @media screen and (max-width:1100px){.footer{width: 1100px}}
-.footerbox {
-	width: 1100px;
-	margin: 0 auto;
-}
-.footerbox .top {
-	height: 160px;
-	border-bottom: 1px solid #eee;
-}
-.footerbox .top .service ul {
-	margin-top: 30px;
-}
-.footerbox .top .item {
-	height: 30px;
-	line-height: 25px;
-}
-.footerbox .top div {
-	width: 50%;
-	text-align: center;
-}
-.footerbox ul {
-	color: #fff;
-}
-.footerbox .bottom {
-	margin-top: 20px;
-	text-align: center;
-} 
-.footerbox .bottom .item {
-	display: inline-block;
-	width: 80px;
-}
-.footerbox .bottom .line {
-	display: inline-block;
-	width: 1px;
-	height: 14px;
-	background-color: #fff;
-}
