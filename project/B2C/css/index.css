@@ -110,6 +110,23 @@
 	opacity: 0;
 	transition: all 1s;
 }
+/*.banner .banner_box .loading {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 30%;
+	left: 45%;
+	border: 10px solid #444;
+	border-top: 10px solid #000;
+	border-radius: 50%;
+	animation: bannerLoading 1s linear infinite;
+	z-index: -1;
+}*/
+@keyframes bannerLoading {
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(180deg);}
+	100%{transform: rotate(360deg);}
+}
 .banner .banner_box .item img{
 	position: relative;
 	left: 50%;
