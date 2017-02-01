@@ -27,6 +27,10 @@ var banner = function(){
 	$('.banner .btn').mouseout(function(){
 		$(this).css('opacity','0.5')
 	})
+	//banner初始样式
+	var i = 0
+	$('.banner .dots .dots_item:eq(0)').css('border-color','#aaa')
+	$('.banner .banner_box li:eq(0)').css('opacity',1)
 	//自动播放banner
 	var timer = setInterval(next,5000)
 	$('.banner .banner_box li').mouseover(function(){
@@ -44,25 +48,16 @@ var banner = function(){
 		pre()
 	})
 	//选择点切换
-	$('.banner .dots .dots_item:eq(0)').css('border-color','#aaa')
 	$('.banner .dots .dots_item').mouseover(function(){
-		$('.banner .dots .dots_item').css('border-color','#fff')
-		$(this).css('border-color','#aaa')
-		$('.banner .dots .dots_item').each(function(index){
-			if($(this).css('border-color')=='rgb(170, 170, 170)'){
-				i = index
-			}
-		})
-		$('.banner .banner_box li').removeClass('active')
-		$('.banner .banner_box li:eq('+i+')').addClass('active')
+		i = $(this).index()
+		bannerSwitch(i)
 	})
 	//下一张banner
 	var next = function(){
-		var i = 0
 		$('.banner .banner_box li').each(function(index){
-			if($(this).css('z-index')==1){
+			if($(this).css('opacity')!=0){
 				i = index+1
-				if(i>=$('.banner .banner_box li').length){
+				if(i>$('.banner .banner_box li').length-1){
 					i = 0
 				}
 			}
@@ -71,9 +66,8 @@ var banner = function(){
 	}
 	//上一张banner
 	 var pre = function(){
-	 	var i = 0
 		$('.banner .banner_box li').each(function(index){
-			if($(this).css('z-index')==1){
+			if($(this).css('opacity')!=0){
 				i = index-1
 				if(i<0){
 					i = $('.banner .banner_box li').length-1
@@ -84,8 +78,8 @@ var banner = function(){
 	 }
 	 //切换banner
 	 var bannerSwitch = function(i){
-	 	$('.banner .banner_box li').removeClass('active')
-		$('.banner .banner_box li:eq('+i+')').addClass('active')
+	 	$('.banner .banner_box li').css('opacity',0)
+		$('.banner .banner_box li:eq('+i+')').css('opacity',1)
 		$('.banner .dots .dots_item').css('border-color','#fff')
 		$('.banner .dots .dots_item:eq('+i+')').css('border-color','#aaa')
 	 }

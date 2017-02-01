@@ -107,6 +107,8 @@
 	width: 100%;
 	height: 420px;
 	overflow: hidden;
+	opacity: 0;
+	transition: all 1s;
 }
 .banner .banner_box .item img{
 	position: relative;
@@ -117,7 +119,6 @@
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
-.active {z-index: 1;}
 .banner .btn {
 	display: none;
 	position: absolute;
