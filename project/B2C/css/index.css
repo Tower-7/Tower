@@ -92,8 +92,25 @@
 .nav .dd_item {
 	display: inline-block;
 	width: 100px;
+	margin-top: 20px
 }
-
+.nav .dd_item p {
+	line-height: 20px;
+}
+.nav .dd_item .icon {
+	transition: all 2s;
+	-webkit-transition: all 2s;
+	-ms-transition: all 2s;
+	-moz-transition: all 2s;
+	-o-transition: all 2s;
+}
+.nav .dd_item .icon:hover {
+	transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
 
 .banner {
 	position: relative;
@@ -134,7 +151,7 @@
 	-ms-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 }
 .banner .btn {
 	display: none;
@@ -371,11 +388,35 @@
 }
 .fourth-merchandise .content .merchandise_item:hover {
 	animation:fourthMove 1s 1;
-	animation-timing-function: ease-out;
-	-webkit-animation-timing-function: ease-out;
+	-ms-animation:fourthMove 1s 1;
+	-moz-animation:fourthMove 1s 1;
 	-webkit-animation:fourthMove 1s 1;
+	-o-animation:fourthMove 1s 1;
+	animation-timing-function: ease-out;
+	-ms-animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	-o-animation-timing-function: ease-out;
 }
 @keyframes fourthMove {
+	0% {-ms-transform: rotate(0deg) scale(1,1);}
+	20%{-ms-transform: rotate(3deg) scale(1.05,1.05);}
+	30%{-ms-transform: rotate(-3deg) scale(1.05,1.05);}
+	40%{-ms-transform: rotate(3deg) scale(1.05,1.05);}
+	50%{-ms-transform: rotate(-3deg) scale(1.05,1.05);}
+	60%{-ms-transform: rotate(3deg) scale(1.05,1.05);}
+	70%{-ms-transform: rotate(-3deg) scale(1.05,1.05);}
+	80%{-ms-transform: rotate(3deg) scale(1.05,1.05);}
+	100% {-ms-transform: rotate(0deg) scale(1,1);}
+	0% {-moz-transform: rotate(0deg) scale(1,1);}
+	20%{-moz-transform: rotate(3deg) scale(1.05,1.05);}
+	30%{-moz-transform: rotate(-3deg) scale(1.05,1.05);}
+	40%{-moz-transform: rotate(3deg) scale(1.05,1.05);}
+	50%{-moz-transform: rotate(-3deg) scale(1.05,1.05);}
+	60%{-moz-transform: rotate(3deg) scale(1.05,1.05);}
+	70%{-moz-transform: rotate(-3deg) scale(1.05,1.05);}
+	80%{-moz-transform: rotate(3deg) scale(1.05,1.05);}
+	100% {-moz-transform: rotate(0deg) scale(1,1);}
 	0% {-webkit-transform: rotate(0deg) scale(1,1);}
 	20%{-webkit-transform: rotate(3deg) scale(1.05,1.05);}
 	30%{-webkit-transform: rotate(-3deg) scale(1.05,1.05);}
@@ -385,6 +426,16 @@
 	70%{-webkit-transform: rotate(-3deg) scale(1.05,1.05);}
 	80%{-webkit-transform: rotate(3deg) scale(1.05,1.05);}
 	100% {-webkit-transform: rotate(0deg) scale(1,1);}
+	0% {-o-transform: rotate(0deg) scale(1,1);}
+	20%{-o-transform: rotate(3deg) scale(1.05,1.05);}
+	30%{-o-transform: rotate(-3deg) scale(1.05,1.05);}
+	40%{-o-transform: rotate(3deg) scale(1.05,1.05);}
+	50%{-o-transform: rotate(-3deg) scale(1.05,1.05);}
+	60%{-o-transform: rotate(3deg) scale(1.05,1.05);}
+	70%{-o-transform: rotate(-3deg) scale(1.05,1.05);}
+	80%{-o-transform: rotate(3deg) scale(1.05,1.05);}
+	100% {-o-transform: rotate(0deg) scale(1,1);}
+
 }
 .fourth-merchandise .content .merchandise_item h4 {
 	position: absolute;
