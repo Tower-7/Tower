@@ -32,7 +32,9 @@ var banner = function(){
 	$('.banner .dots .dots_item:eq(0)').css('border-color','#aaa')
 	$('.banner .banner_box li:eq(0)').css('opacity',1)
 	//自动播放banner
-	var timer = setInterval(next,5000)
+	var timer = setInterval(function(){
+		next()
+	},5000)
 	$('.banner .banner_box li').mouseover(function(){
 		clearInterval(timer)
 	})
