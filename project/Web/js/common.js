@@ -7,25 +7,56 @@ var getLength = function(){
 	var screenHeight = $(window).height();
 	productAnimation(lengthTop,screenHeight)
 	showAnimation(lengthTop,screenHeight)
+	gotoTop(screenHeight)
 }
 
 var productAnimation = function(lengthTop,screenHeight){
+		productAnimated(lengthTop,screenHeight)
 	$(document).scroll(function(){
-		lengthTop = $('.product').offset().top - $(window).scrollTop()-screenHeight/2
-		if(lengthTop <= screenHeight){
-			$('.product .dd li').eq(0).addClass('corporate')
-			$('.product .dd li').eq(1).addClass('shop')
-			$('.product .dd li').eq(2).addClass('education')
-		}
+		productAnimated(lengthTop,screenHeight)
 	})
 }
+var productAnimated = function(lengthTop,screenHeight){
+	lengthTop = $('.product').offset().top - $(window).scrollTop()-screenHeight/2
+	if(lengthTop <= screenHeight){
+		$('.product .dd li').eq(0).addClass('corporate')
+		$('.product .dd li').eq(1).addClass('shop')
+		$('.product .dd li').eq(2).addClass('education')
+	}
+}
 var showAnimation = function(lengthTop,screenHeight){
+	showAnimated(lengthTop,screenHeight)
 	$(document).scroll(function(){
-		lengthTop = $('.show').offset().top - $(window).scrollTop()+400
-		if(lengthTop <= screenHeight){
-			$('.show>div').addClass('showScal')
-			$('.show .dots .title').addClass('showMove')
-			$('.news').addClass('newsHeight')
+		showAnimated(lengthTop,screenHeight)
+	})
+	
+}
+var showAnimated = function(lengthTop,screenHeight){
+	lengthTop = $('.show').offset().top - $(window).scrollTop()+400
+	if(lengthTop <= screenHeight){
+		$('.show>div').addClass('showScal')
+		$('.show .dots .title').addClass('showMove')
+		$('.news').addClass('newsHeight')
+	}
+}
+var gotoTop = function(screenHeight){
+	var lengthTop = $(window).scrollTop()
+	$(document).scroll(function(){
+		lengthTop = $(window).scrollTop()
+		if(lengthTop > 0){
+			$('.gotoTop').css('right','0')
+
+		}
+		else {
+			$('.gotoTop').css('right','-50px')
 		}
 	})
+	$('.gotoTop .item').eq(2).click(function(){
+		 $('body,html').animate({ scrollTop: 0 }, 200);
+		 return false;
+	})
+	if(lengthTop > 0){
+			$('.gotoTop').css('right','0')
+
+		}
 }
