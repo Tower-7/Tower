@@ -126,9 +126,11 @@
 	background-color: #000;
 	text-align: center;
 	overflow: hidden;
+	display: none;
 }
 .product .dd .corporate {
 	animation: productMoveR 1s 1 ease-in;
+	display: block;
 }
 @keyframes productMoveR {
 	0%{transform: translateX(-500px);}
@@ -136,6 +138,7 @@
 }
 .product .dd .education {
 	animation: productMoveL 1s 1 ease-in;
+	display: block;
 }
 @keyframes productMoveL{
 	0%{transform: translateX(500px);}
@@ -143,6 +146,7 @@
 }
 .product .dd .shop {
 	animation: productScale 1s 1 ease-in;
+	display: block;
 }
 @keyframes productScale{
 	0%{transform: scale(0,0);}
@@ -208,7 +212,11 @@
 	font-size: 30px;
 	border-bottom: 2px solid #00896C;
 	margin-bottom: 80px;
+	display: none;
+}
+.show .dots .showMove {
 	animation: showMove 2s 1;
+	display: block;
 }
 @keyframes showMove {
 	0%{transform: translateX(300px);}
@@ -223,7 +231,11 @@
 	cursor: pointer;
 }
 .show .content {
+	display: none;
+}
+.show .showScal {
 	animation: showScal 0.7s;
+	display: block;
 }
 @keyframes showScal {
 	0%{transform: scale(0.7,0.7);}
@@ -234,6 +246,9 @@
 	100%{transform: scale(1,1);}
 }
 .news {
+	margin-bottom: 550px;
+}
+.newsHeight {
 	margin-bottom: 150px;
 }
 .footer {
