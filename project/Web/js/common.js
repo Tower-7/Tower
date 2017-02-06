@@ -17,7 +17,7 @@ var productAnimation = function(lengthTop,screenHeight){
 	})
 }
 var productAnimated = function(lengthTop,screenHeight){
-	lengthTop = $('.product').offset().top - $(window).scrollTop()-screenHeight/2
+	lengthTop = $('.product').offset().top - $(window).scrollTop()+screenHeight/2
 	if(lengthTop <= screenHeight){
 		$('.product .dd li').eq(0).addClass('corporate')
 		$('.product .dd li').eq(1).addClass('shop')
@@ -32,7 +32,7 @@ var showAnimation = function(lengthTop,screenHeight){
 	
 }
 var showAnimated = function(lengthTop,screenHeight){
-	lengthTop = $('.show').offset().top - $(window).scrollTop()+400
+	lengthTop = $('.show').offset().top - $(window).scrollTop()+screenHeight/2
 	if(lengthTop <= screenHeight){
 		$('.show>div').addClass('showScal')
 		$('.show .dots .title').addClass('showMove')
