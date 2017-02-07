@@ -11,11 +11,13 @@
 	margin: 0 auto;
 }
 .header .logo {
-	font-size: 25px;
-	margin-left: 50px;
+	position: relative;
+	top: 10px;
+	left: 150px;
 	line-height: 50px;
 	font-family: 'Arial';
 	color: #555;
+	font-size: 30px;
 }
 .header .nav {
 	opacity: 0.6;
