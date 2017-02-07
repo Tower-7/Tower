@@ -15,7 +15,7 @@
 	margin-left: 50px;
 	line-height: 50px;
 	font-family: 'Arial';
-	color: #fff;
+	color: #555;
 }
 .header .nav {
 	opacity: 0.6;
@@ -27,10 +27,10 @@
 	text-align: center;
 	line-height: 50px;
 	color: #fff;
-	background-color: #00896C;
+	background-color: rgba(0,137,108,0.5);
 }
 .header .nav .item:hover {
-	background-color: rgba(1,1,1,1);
+	background-color: rgba(1,1,1,0.1);
 }
 .header .nav .item:hover a{
 	color: #00896C;
@@ -68,35 +68,34 @@
 .banner .item h3 {
 	position: absolute;
 	top: 40%;
-	left: 50%;
+	left:5%;
 	font-size: 40px;
-	color: #fff;
-	transform: translateX(-50%);
+	color: #555;
 	animation: bannerTile 1s 1;
 }
 @keyframes bannerTile {
 	0%{transform: translateX(-150%);}
-	100%{transform: translateX(-50%);}
+	100%{transform: translateX(0);}
 }
 .banner .item .contact {
 	position: absolute;
 	display: block;
 	top: 55%;
-	left: 50%;
+	left: 35%;
 	width: 120px;
 	height: 50px;
 	transform: translateX(-50%);
 	text-align: center;
 	line-height: 50px;
 	border-radius: 5px;
-	border: 2px solid #fff;
+	border: 2px solid #555;
 	font-size: 18px;
-	color: #fff;
+	color: #555;
 	animation: bannerContent 1s 1;
 }
 .banner .item .contact:hover {
-	background-color: #fff;
-	color: #888;
+	background-color: rgba(0,137,108,0.5);
+	color: #fff;
 }
 @keyframes bannerContent {
 	0%{transform: translateX(150%);}
@@ -112,6 +111,7 @@
 	margin-bottom: 10px;
 	font-size: 30px;
 	font-weight: normal;
+	color: #555;
 }
 .product .dd ul {
 	width: 1000px;
@@ -123,7 +123,7 @@
 	width: 31%;
 	height: 150px;
 	margin:1%;
-	background-color: #000;
+	background-color: rgba(0,137,108,0.8);
 	text-align: center;
 	overflow: hidden;
 	display: none;
@@ -177,10 +177,10 @@
 }
 .product .dd .item h3 {
 	font-weight: normal;
-	color: #00896C;
+	color: #fff;
 }
 .product .dd .item p {
-	color: #00896C;
+	color: #fff;
 } 
 
 .show .cases img {
