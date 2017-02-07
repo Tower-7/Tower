@@ -72,10 +72,49 @@
 	font-size: 40px;
 	color: #555;
 	animation: bannerTile 1s 1;
+	-moz-animation: bannerTile 1s 1;
+	-webkit-animation: bannerTile 1s 1;
+	-o-animation: bannerTile 1s 1;
 }
 @keyframes bannerTile {
 	0%{transform: translateX(-150%);}
 	100%{transform: translateX(0);}
+	0%{-moz-transform: translateX(-150%);}
+	100%{-moz-transform: translateX(0);}
+	0%{-webkit-transform: translateX(-150%);}
+	100%{-webkit-transform: translateX(0);}
+	0%{-o-transform: translateX(-150%);}
+	100%{-o-transform: translateX(0);}
+}
+@-moz-keyframes bannerTile {
+	0%{transform: translateX(-150%);}
+	100%{transform: translateX(0);}
+	0%{-moz-transform: translateX(-150%);}
+	100%{-moz-transform: translateX(0);}
+	0%{-webkit-transform: translateX(-150%);}
+	100%{-webkit-transform: translateX(0);}
+	0%{-o-transform: translateX(-150%);}
+	100%{-o-transform: translateX(0);}
+}
+@-webkit-keyframes bannerTile {
+	0%{transform: translateX(-150%);}
+	100%{transform: translateX(0);}
+	0%{-moz-transform: translateX(-150%);}
+	100%{-moz-transform: translateX(0);}
+	0%{-webkit-transform: translateX(-150%);}
+	100%{-webkit-transform: translateX(0);}
+	0%{-o-transform: translateX(-150%);}
+	100%{-o-transform: translateX(0);}
+}
+@-o-keyframes bannerTile {
+	0%{transform: translateX(-150%);}
+	100%{transform: translateX(0);}
+	0%{-moz-transform: translateX(-150%);}
+	100%{-moz-transform: translateX(0);}
+	0%{-webkit-transform: translateX(-150%);}
+	100%{-webkit-transform: translateX(0);}
+	0%{-o-transform: translateX(-150%);}
+	100%{-o-transform: translateX(0);}
 }
 .banner .item .contact {
 	position: absolute;
@@ -85,6 +124,9 @@
 	width: 120px;
 	height: 50px;
 	transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 	text-align: center;
 	line-height: 50px;
 	border-radius: 5px;
@@ -92,6 +134,9 @@
 	font-size: 18px;
 	color: #555;
 	animation: bannerContent 1s 1;
+	-moz-animation: bannerContent 1s 1;
+	-webkit-animation: bannerContent 1s 1;
+	-o-animation: bannerContent 1s 1;
 }
 .banner .item .contact:hover {
 	background-color: rgba(0,137,108,0.5);
@@ -100,6 +145,42 @@
 @keyframes bannerContent {
 	0%{transform: translateX(150%);}
 	100%{transform: translateX(-50%);}
+	0%{-moz-transform: translateX(150%);}
+	100%{-moz-transform: translateX(-50%);}
+	0%{-webkit-transform: translateX(150%);}
+	100%{-webkit-transform: translateX(-50%);}
+	0%{-o-transform: translateX(150%);}
+	100%{-o-transform: translateX(-50%);}
+}
+@-moz-keyframes bannerContent {
+	0%{transform: translateX(150%);}
+	100%{transform: translateX(-50%);}
+	0%{-moz-transform: translateX(150%);}
+	100%{-moz-transform: translateX(-50%);}
+	0%{-webkit-transform: translateX(150%);}
+	100%{-webkit-transform: translateX(-50%);}
+	0%{-o-transform: translateX(150%);}
+	100%{-o-transform: translateX(-50%);}
+}
+@-webkit-keyframes bannerContent {
+	0%{transform: translateX(150%);}
+	100%{transform: translateX(-50%);}
+	0%{-moz-transform: translateX(150%);}
+	100%{-moz-transform: translateX(-50%);}
+	0%{-webkit-transform: translateX(150%);}
+	100%{-webkit-transform: translateX(-50%);}
+	0%{-o-transform: translateX(150%);}
+	100%{-o-transform: translateX(-50%);}
+}
+@-o-keyframes bannerContent {
+	0%{transform: translateX(150%);}
+	100%{transform: translateX(-50%);}
+	0%{-moz-transform: translateX(150%);}
+	100%{-moz-transform: translateX(-50%);}
+	0%{-webkit-transform: translateX(150%);}
+	100%{-webkit-transform: translateX(-50%);}
+	0%{-o-transform: translateX(150%);}
+	100%{-o-transform: translateX(-50%);}
 }
 .product {
 	height: 300px;
@@ -130,27 +211,144 @@
 }
 .product .dd .corporate {
 	animation: productMoveR 1s 1 ease-in;
+	-moz-animation: productMoveR 1s 1 ease-in;
+	-webkit-animation: productMoveR 1s 1 ease-in;
+	-o-animation: productMoveR 1s 1 ease-in;
 	display: block;
 }
 @keyframes productMoveR {
 	0%{transform: translateX(-500px);}
 	100%{transform: translateX(0px);}
+	0%{-moz-transform: translateX(-500px);}
+	100%{-moz-transform: translateX(0px);}
+	0%{-webkit-transform: translateX(-500px);}
+	100%{-webkit-transform: translateX(0px);}
+	0%{-o-transform: translateX(-500px);}
+	100%{-o-transform: translateX(0px);}
+}
+@-moz-keyframes productMoveR {
+	0%{transform: translateX(-500px);}
+	100%{transform: translateX(0px);}
+	0%{-moz-transform: translateX(-500px);}
+	100%{-moz-transform: translateX(0px);}
+	0%{-webkit-transform: translateX(-500px);}
+	100%{-webkit-transform: translateX(0px);}
+	0%{-o-transform: translateX(-500px);}
+	100%{-o-transform: translateX(0px);}
+}
+@-webkit-keyframes productMoveR {
+	0%{transform: translateX(-500px);}
+	100%{transform: translateX(0px);}
+	0%{-moz-transform: translateX(-500px);}
+	100%{-moz-transform: translateX(0px);}
+	0%{-webkit-transform: translateX(-500px);}
+	100%{-webkit-transform: translateX(0px);}
+	0%{-o-transform: translateX(-500px);}
+	100%{-o-transform: translateX(0px);}
+}
+@-o-keyframes productMoveR {
+	0%{transform: translateX(-500px);}
+	100%{transform: translateX(0px);}
+	0%{-moz-transform: translateX(-500px);}
+	100%{-moz-transform: translateX(0px);}
+	0%{-webkit-transform: translateX(-500px);}
+	100%{-webkit-transform: translateX(0px);}
+	0%{-o-transform: translateX(-500px);}
+	100%{-o-transform: translateX(0px);}
 }
 .product .dd .education {
 	animation: productMoveL 1s 1 ease-in;
+	-webkit-animation: productMoveL 1s 1 ease-in;
+	-moz-animation: productMoveL 1s 1 ease-in;
+	-o-animation: productMoveL 1s 1 ease-in;
 	display: block;
 }
 @keyframes productMoveL{
 	0%{transform: translateX(500px);}
 	100%{transform: translateX(0px);}
+	0%{-moz-transform: translateX(500px);}
+	100%{-moz-transform: translateX(0px);}
+	0%{-webkit-transform: translateX(500px);}
+	100%{-webkit-transform: translateX(0px);}
+	0%{-o-transform: translateX(500px);}
+	100%{-o-transform: translateX(0px);}
+}
+@-moz-keyframes productMoveL{
+	0%{transform: translateX(500px);}
+	100%{transform: translateX(0px);}
+	0%{-moz-transform: translateX(500px);}
+	100%{-moz-transform: translateX(0px);}
+	0%{-webkit-transform: translateX(500px);}
+	100%{-webkit-transform: translateX(0px);}
+	0%{-o-transform: translateX(500px);}
+	100%{-o-transform: translateX(0px);}
+}
+@-webkit-keyframes productMoveL{
+	0%{transform: translateX(500px);}
+	100%{transform: translateX(0px);}
+	0%{-moz-transform: translateX(500px);}
+	100%{-moz-transform: translateX(0px);}
+	0%{-webkit-transform: translateX(500px);}
+	100%{-webkit-transform: translateX(0px);}
+	0%{-o-transform: translateX(500px);}
+	100%{-o-transform: translateX(0px);}
+}
+@-o-keyframes productMoveL{
+	0%{transform: translateX(500px);}
+	100%{transform: translateX(0px);}
+	0%{-moz-transform: translateX(500px);}
+	100%{-moz-transform: translateX(0px);}
+	0%{-webkit-transform: translateX(500px);}
+	100%{-webkit-transform: translateX(0px);}
+	0%{-o-transform: translateX(500px);}
+	100%{-o-transform: translateX(0px);}
 }
 .product .dd .shop {
 	animation: productScale 1s 1 ease-in;
+	-moz-animation: productScale 1s 1 ease-in;
+	-webkit-animation: productScale 1s 1 ease-in;
+	-o-animation: productScale 1s 1 ease-in;
 	display: block;
 }
 @keyframes productScale{
 	0%{transform: scale(0,0);}
 	100%{transform: scale(1,1);}
+	0%{-moz-transform: scale(0,0);}
+	100%{-moz-transform: scale(1,1);}
+	0%{-webkit-transform: scale(0,0);}
+	100%{-webkit-transform: scale(1,1);}
+	0%{-o-transform: scale(0,0);}
+	100%{-o-transform: scale(1,1);}
+}
+@-moz-keyframes productScale{
+	0%{transform: scale(0,0);}
+	100%{transform: scale(1,1);}
+	0%{-moz-transform: scale(0,0);}
+	100%{-moz-transform: scale(1,1);}
+	0%{-webkit-transform: scale(0,0);}
+	100%{-webkit-transform: scale(1,1);}
+	0%{-o-transform: scale(0,0);}
+	100%{-o-transform: scale(1,1);}
+}
+@-webkit-keyframes productScale{
+	0%{transform: scale(0,0);}
+	100%{transform: scale(1,1);}
+	0%{-moz-transform: scale(0,0);}
+	100%{-moz-transform: scale(1,1);}
+	0%{-webkit-transform: scale(0,0);}
+	100%{-webkit-transform: scale(1,1);}
+	0%{-o-transform: scale(0,0);}
+	100%{-o-transform: scale(1,1);}
+}
+@-o-keyframes productScale{
+	0%{transform: scale(0,0);}
+	100%{transform: scale(1,1);}
+	0%{-moz-transform: scale(0,0);}
+	100%{-moz-transform: scale(1,1);}
+	0%{-webkit-transform: scale(0,0);}
+	100%{-webkit-transform: scale(1,1);}
+	0%{-o-transform: scale(0,0);}
+	100%{-o-transform: scale(1,1);}
 }
 /*
 .product .dd .shop {
@@ -216,11 +414,50 @@
 }
 .show .dots .showMove {
 	animation: showMove 2s 1;
+	-moz-animation: showMove 2s 1;
+	-webkit-animation: showMove 2s 1;
+	-o-animation: showMove 2s 1;
 	display: block;
 }
 @keyframes showMove {
 	0%{transform: translateX(300px);}
 	100%{transform: translateX(0);}
+	0%{-moz-transform: translateX(300px);}
+	100%{-moz-transform: translateX(0);}
+	0%{-webkit-transform: translateX(300px);}
+	100%{-webkit-transform: translateX(0);}
+	0%{-o-transform: translateX(300px);}
+	100%{-o-transform: translateX(0);}
+}
+@-moz-keyframes showMove {
+	0%{transform: translateX(300px);}
+	100%{transform: translateX(0);}
+	0%{-moz-transform: translateX(300px);}
+	100%{-moz-transform: translateX(0);}
+	0%{-webkit-transform: translateX(300px);}
+	100%{-webkit-transform: translateX(0);}
+	0%{-o-transform: translateX(300px);}
+	100%{-o-transform: translateX(0);}
+}
+@-webkit-keyframes showMove {
+	0%{transform: translateX(300px);}
+	100%{transform: translateX(0);}
+	0%{-moz-transform: translateX(300px);}
+	100%{-moz-transform: translateX(0);}
+	0%{-webkit-transform: translateX(300px);}
+	100%{-webkit-transform: translateX(0);}
+	0%{-o-transform: translateX(300px);}
+	100%{-o-transform: translateX(0);}
+}
+@-o-keyframes showMove {
+	0%{transform: translateX(300px);}
+	100%{transform: translateX(0);}
+	0%{-moz-transform: translateX(300px);}
+	100%{-moz-transform: translateX(0);}
+	0%{-webkit-transform: translateX(300px);}
+	100%{-webkit-transform: translateX(0);}
+	0%{-o-transform: translateX(300px);}
+	100%{-o-transform: translateX(0);}
 }
 .show .dots .dot {
 	width: 50px;
@@ -235,6 +472,9 @@
 }
 .show .showScal {
 	animation: showScal 0.7s;
+	-moz-animation: showScal 0.7s;
+	-webkit-animation: showScal 0.7s;
+	-o-animation: showScal 0.7s;
 	display: block;
 }
 @keyframes showScal {
@@ -244,6 +484,24 @@
 	65%{transform: scale(1,1);}
 	80%{transform: scale(0.95,0.95);}
 	100%{transform: scale(1,1);}
+	0%{-moz-transform: scale(0.7,0.7);}
+	35%{-moz-transform: scale(1,1);}
+	45%{-moz-transform: scale(0.9,0.9);}
+	65%{-moz-transform: scale(1,1);}
+	80%{-moz-transform: scale(0.95,0.95);}
+	100%{-moz-transform: scale(1,1);}
+	0%{-webkit-transform: scale(0.7,0.7);}
+	35%{-webkit-transform: scale(1,1);}
+	45%{-webkit-transform: scale(0.9,0.9);}
+	65%{-webkit-transform: scale(1,1);}
+	80%{-webkit-transform: scale(0.95,0.95);}
+	100%{-webkit-transform: scale(1,1);}
+	0%{-o-transform: scale(0.7,0.7);}
+	35%{-o-transform: scale(1,1);}
+	45%{-o-transform: scale(0.9,0.9);}
+	65%{-o-transform: scale(1,1);}
+	80%{-o-transform: scale(0.95,0.95);}
+	100%{-o-transform: scale(1,1);}
 }
 .news {
 	margin-bottom: 550px;
