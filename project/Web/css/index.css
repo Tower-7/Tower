@@ -116,6 +116,9 @@
 	0%{-o-transform: translateX(-150%);}
 	100%{-o-transform: translateX(0);}
 }
+.banner .item p {
+	color: #555;
+}
 .banner .item .contact {
 	position: absolute;
 	display: block;
