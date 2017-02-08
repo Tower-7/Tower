@@ -34,9 +34,8 @@ var showAnimation = function(lengthTop,screenHeight){
 var showAnimated = function(lengthTop,screenHeight){
 	lengthTop = $('.show').offset().top - screenHeight + $('.product').height()/2;
 	if(lengthTop <= $(window).scrollTop()){
-		$('.show>div').addClass('showScal')
+		$('.show .scale').addClass('showScal')
 		$('.show .dots .title').addClass('showMove')
-		$('.news').addClass('newsHeight')
 	}
 }
 var gotoTop = function(screenHeight){
