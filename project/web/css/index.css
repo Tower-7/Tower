@@ -188,13 +188,13 @@
 	100%{-o-transform: translateX(-50%);}
 }
 .product {
-	height: 300px;
+	height: 400px;
 }
 .product .dt {
 	text-align: center;	
 }
 .product .dt h3 {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	font-size: 30px;
 	font-weight: normal;
 	color: #555;
@@ -202,7 +202,7 @@
 .product .dd ul {
 	width: 1000px;
 	height: 200px;
-	margin: 0 auto;
+	margin: 30px auto;
 }
 .product .dd .item {
 	float: left;
@@ -385,7 +385,35 @@
 .product .dd .item p {
 	color: #fff;
 } 
-
+.advantage {
+	width: 100%;
+	height: 312px;
+	margin-bottom: 150px;
+	background: url(../img/advantage.jpg)center;
+}
+.advantage .content {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../img/advantage_bg_top.png)center top no-repeat,url(../img/advantage_bg_bottom.png)center bottom no-repeat;
+}
+.advantage {
+	text-align: center;
+	color: #fff;
+}
+.advantage .left {
+	width: 300px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.advantage .right {
+	width: 300px;
+	margin-right: 50px;
+	margin-top: 50px;
+}
+.advantage h3 {
+	margin-bottom: 30px;
+}
 .show .cases img {
 	width: 768px;
 	height:480px;
